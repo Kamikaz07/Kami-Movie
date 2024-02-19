@@ -1,9 +1,9 @@
 {
   "about": {
-    "description": "movie-web ir tīmekļa lietojumprogramma, kas internetā meklē straumes. Komandas mērķis ir galvenokārt minimālistiska pieeja satura patērēšanai.",
+    "description": "kami-movie ir tīmekļa lietojumprogramma, kas internetā meklē straumes. Komandas mērķis ir galvenokārt minimālistiska pieeja satura patērēšanai.",
     "faqTitle": "Bieži jautājumi",
     "q1": {
-      "body": "Movie-web neveic nekādu saturu. Noklikšķinot uz kāda skatāma satura, internetā tiek meklēts atlasītais multivides saturs (ielādes ekrānā un cilnē “video avoti” varat redzēt, kuru avotu izmantojat). Multivide nekad netiek augšupielādēta, izmantojot filmu tīmekli, viss notiek caur šo meklēšanas mehānismu.",
+      "body": "kami-movie neveic nekādu saturu. Noklikšķinot uz kāda skatāma satura, internetā tiek meklēts atlasītais multivides saturs (ielādes ekrānā un cilnē “video avoti” varat redzēt, kuru avotu izmantojat). Multivide nekad netiek augšupielādēta, izmantojot filmu tīmekli, viss notiek caur šo meklēšanas mehānismu.",
       "title": "No kurienes nāk saturs?"
     },
     "q2": {
@@ -79,7 +79,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Atruna",
-      "disclaimerText": "Kami Movie nemitina nekādus failus, tas tikai veido saites uz trešās puses pakalpojumiem. Juridiskie jautājumi ir jārisina ar failu resursdatoriem un nodrošinātājiem. movie-web nav atbildīgs par video pakalpojumu sniedzēju parādītajiem multivides failiem."
+      "disclaimerText": "kami-movie nemitina nekādus failus, tas tikai veido saites uz trešās puses pakalpojumiem. Juridiskie jautājumi ir jārisina ar failu resursdatoriem un nodrošinātājiem. movie-web nav atbildīgs par video pakalpojumu sniedzēju parādītajiem multivides failiem."
     },
     "links": {
       "discord": "Discord",
@@ -371,11 +371,6 @@
         "urlLabel": "Worker URLs",
         "urlPlaceholder": "https://"
       }
-    },
-    "locale": {
-      "language": "Lietojumprogrammas valoda",
-      "languageDescription": "Visai lietojumprogrammai lietotā valoda.",
-      "title": "Lokalizācija"
     },
     "reset": "Restartēt",
     "save": "Saglabāt",

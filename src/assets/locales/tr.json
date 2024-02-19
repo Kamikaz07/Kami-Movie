@@ -1,9 +1,9 @@
 {
   "about": {
-    "description": "movie-web internette akışlar için tarama yapan bir web uygulamasıdır. Ekip, içerik tüketmeye karşı ekseriyetle minimalist bir yaklaşım sergilemektedir.",
+    "description": "kami-movie internette akışlar için tarama yapan bir web uygulamasıdır. Ekip, içerik tüketmeye karşı ekseriyetle minimalist bir yaklaşım sergilemektedir.",
     "faqTitle": "Sıkça sorulan sorular",
     "q1": {
-      "body": "movie-web herhangi bir içerik barındırmaz. İzlemek için bir şeye tıkladığınızda, seçilen medya için internette arama yapılır (Yükleme ekranında ve 'video kaynakları' sekmesinde hangi kaynağı kullandığınızı görebilirsiniz). Medya hiçbir zaman movie-web tarafından yüklenmez, her şey bu arama mekanizması aracılığıyla gerçekleşir.",
+      "body": "kami-movie herhangi bir içerik barındırmaz. İzlemek için bir şeye tıkladığınızda, seçilen medya için internette arama yapılır (Yükleme ekranında ve 'video kaynakları' sekmesinde hangi kaynağı kullandığınızı görebilirsiniz). Medya hiçbir zaman movie-web tarafından yüklenmez, her şey bu arama mekanizması aracılığıyla gerçekleşir.",
       "title": "İçerikler nereden geliyor?"
     },
     "q2": {
@@ -74,28 +74,29 @@
     "badge": "Bir şeyler ters gitti",
     "details": "Hata detayları",
     "reloadPage": "Sayfayı yenile",
-    "showError": "Hata detaylarını göster",
+    "showError": "Hata ayrıntılarını göster",
     "title": "Bir hatayla karşılaştık!"
   },
   "footer": {
     "legal": {
       "disclaimer": "Sorumluluk Reddi",
-      "disclaimerText": "Kami Movie herhangi bir dosya barındırmaz, yalnızca 3. parti hizmetlere bağlantı verir. Yasal meseleler, dosya barındırıcıları ve sağlayıcıları ile görüşülmelidir. movie-web, video sağlayıcıları tarafından gösterilen hiçbir medya dosyasından sorumlu değildir."
+      "disclaimerText": "kami-movie herhangi bir dosya barındırmaz, yalnızca 3. parti hizmetlere bağlantı verir. Yasal meseleler, dosya barındırıcıları ve sağlayıcıları ile görüşülmelidir. movie-web, video sağlayıcıları tarafından gösterilen hiçbir medya dosyasından sorumlu değildir."
     },
     "links": {
-      "github": "GitHub",
+      "discord": "Discord",
       "dmca": "DMCA",
-      "linkedin": "Linkedin"
+      "github": "GitHub"
     },
     "tagline": "Bu açık kaynaklı akış uygulamasıyla en sevdiğiniz dizileri ve filmleri izleyin."
   },
   "global": {
-    "name": "Kami Movie",
+    "name": "kami-movie",
     "pages": {
       "about": "Hakkında",
       "dmca": "DMCA",
       "login": "Giriş yap",
-      "pagetitle": "{{title}} - Kami Movie",
+      "onboarding": "Kur",
+      "pagetitle": "{{title}} - kami-movie",
       "register": "Kayıt ol",
       "settings": "Ayarlar"
     }
@@ -120,7 +121,10 @@
     },
     "titles": {
       "day": {
-        "default": "Bu öğleden sonra ne izlemek istersiniz?"
+        "default": "Bu öğleden sonra ne izlemek istersiniz?",
+        "extra": [
+          "Maceraperest mi hissediyorsun? Jurassic Park iyi bir seçim olabilir."
+        ]
       },
       "morning": {
         "default": "Bu sabah ne izlemek istersiniz?",
@@ -176,7 +180,9 @@
     "menus": {
       "downloads": {
         "disclaimer": "İndirme bağlantıları doğrudan sağlayıcının kendisinden alınır. movie-web'in sağlanan indirme bağlantıları üzerinde hiçbir konrolü yoktur.",
+        "downloadSubtitle": "Geçerli altyazıyı indir",
         "downloadVideo": "Videoyu indir",
+        "hlsDisclaimer": "İndirme bağlantıları doğrudan sağlayıcının kendisinden alınır. movie-web'in sağlanan indirme bağlantıları üzerinde hiçbir konrolü yoktur. Lütfen bir HLS oynatma listesi indirdiğinizi unutmayın; bu, gelişmiş multimedya akışına aşina olan kullanıcılara yöneliktir.",
         "onAndroid": {
           "1": "Android'e indirmek için önce indir butonuna basın, sonra açılan yeni sayfada video üzerine <bold>basılı tutun</bold>, ardından <bold>Videoyu indir</bold> seçeneğini seçin.",
           "shortTitle": "İndir / Android",
@@ -200,7 +206,8 @@
         "episodeBadge": "B{{episode}}",
         "loadingError": "Sezon yüklenirken hata oluştu",
         "loadingList": "Yükleniyor...",
-        "loadingTitle": "Yükleniyor..."
+        "loadingTitle": "Yükleniyor...",
+        "unairedEpisodes": "Bu sezondaki bir veya daha fazla bölüm henüz yayınlanmadığı için devre dışı bırakılmıştır."
       },
       "playback": {
         "speedLabel": "Oynatma hızı",
@@ -214,10 +221,12 @@
       },
       "settings": {
         "downloadItem": "İndir",
+        "enableSubtitles": "Altyazıları Etkinleştir",
         "experienceSection": "İzleme deneyimi",
         "playbackItem": "Oynatma ayarları",
         "qualityItem": "Kalite",
         "sourceItem": "Video kaynakları",
+        "subtitleItem": "Altyazı ayarları",
         "videoSection": "Video ayarları"
       },
       "sources": {
@@ -235,9 +244,25 @@
         },
         "title": "Kaynaklar",
         "unknownOption": "Bilinmeyen"
+      },
+      "subtitles": {
+        "customChoice": "Altyazı dosyası yükle",
+        "customizeLabel": "Seçenekler",
+        "offChoice": "Kapat",
+        "settings": {
+          "backlink": "Kişisel altyazılar",
+          "delay": "Altyazı gecikmesi",
+          "fixCapitals": "Büyük harf kullanımını düzelt"
+        },
+        "title": "Altyazılar",
+        "unknownLanguage": "Bilinmeyen"
       }
     },
     "metadata": {
+      "api": {
+        "text": "API üstverisi yüklenemedi, lütfen internet bağlantınızı kontrol edin.",
+        "title": "API üstverisi yüklenemedi"
+      },
       "failed": {
         "badge": "Başarısız oldu",
         "homeButton": "Ana sayfaya dön",
@@ -276,7 +301,7 @@
       },
       "notFound": {
         "badge": "Bulunamadı",
-        "detailsButton": "Detayları göster",
+        "detailsButton": "Ayrıntıları göster",
         "homeButton": "Ana sayfaya git",
         "text": "Sağlayıcılarımız arasında arama yaptık ve aradığınız medyayı bulamadık! Medyaları barındırmıyoruz ve mevcut olanlar üzerinde hiçbir kontrolümüz yok. Daha fazla ayrıntı için lütfen aşağıdaki 'Ayrıntıları göster' seçeneğine tıklayın.",
         "title": "Bunu bulamadık"
@@ -287,6 +312,12 @@
       "remaining": "{{timeLeft}} kaldı • {{timeFinished, datetime}}'de bitiyor",
       "shortRegular": "{{timeWatched}}",
       "shortRemaining": "-{{timeLeft}}"
+    },
+    "turnstile": {
+      "description": "Lütfen sağ taraftaki Captcha'yı çözerek insan olduğunuzu doğrulayın. Bu, movie-web'i güvende tutmak içindir!",
+      "error": "İnsan olduğunuz doğrulanamadı. Lütfen tekrar deneyin.",
+      "title": "İnsan olduğunuzu doğrulamamız gerekiyor.",
+      "verifyingHumanity": "İnsan olduğunuz doğrulanıyor..."
     }
   },
   "screens": {
@@ -353,30 +384,25 @@
         "default": "Varsayılan",
         "gray": "Gri",
         "red": "Kırmızı",
-        "teal": "Camgöbeği"
+        "teal": "Turkuaz"
       },
       "title": "Görünüm"
     },
     "connections": {
       "server": {
-        "description": "Verilerinizi depolamak için özel bir arkayüze bağlanmak istiyorsanız, bunu etkinleştirin ve URL'yi sağlayın.",
+        "description": "Verilerinizi depolamak için özel bir arkayüze bağlanmak istiyorsanız, bunu etkinleştirin ve URL'yi sağlayın. <0>Yönergeler.</0>",
         "label": "Özel sunucu",
         "urlLabel": "Özel sunucu URL'si"
       },
       "title": "Bağlantılar",
       "workers": {
         "addButton": "Yeni işleyici ekle",
-        "description": "Uygulamanın çalışması için tüm trafik vekil sunucular üzerinden yönlendirilir. Kendi işleyicilerinizi getirmek istiyorsanız bunu etkinleştirin.",
+        "description": "Uygulamanın çalışması için tüm trafik vekil sunucular üzerinden yönlendirilir. Kendi işleyicilerinizi getirmek istiyorsanız bunu etkinleştirin.<0>Yönergeler.</0>",
         "emptyState": "Henüz işleyici yok, aşağıya bir tane ekleyin",
         "label": "Özel vekil sunucu işleyici kullan",
         "urlLabel": "İşleyici URL'leri",
         "urlPlaceholder": "https://"
       }
-    },
-    "locale": {
-      "language": "Uygulama dili",
-      "languageDescription": "Uygulamanın tamamına uygulanan dil.",
-      "title": "Yerelleştirme"
     },
     "reset": "Sıfırla",
     "save": "Kaydet",
@@ -393,6 +419,13 @@
         "unknownVersion": "Bilinmeyen",
         "userId": "Kullanıcı Kimliği"
       }
+    },
+    "subtitles": {
+      "backgroundLabel": "Arka plan opaklığı",
+      "colorLabel": "Renk",
+      "previewQuote": "Korkmamalıyım. Korku aklın katilidir.",
+      "textSizeLabel": "Yazı boyutu",
+      "title": "Altyazılar"
     },
     "unsaved": "Kaydedilmemiş değişiklikleriniz mevcut"
   }

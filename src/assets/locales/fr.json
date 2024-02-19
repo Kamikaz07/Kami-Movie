@@ -1,9 +1,9 @@
 {
   "about": {
-    "description": "movie-web est une application web qui recherche des flux sur Internet. L'équipe vise une approche minimaliste de la consommation de contenu.",
+    "description": "kami-movie est une application web qui recherche des flux sur Internet. L'équipe vise une approche minimaliste de la consommation de contenu.",
     "faqTitle": "Questions fréquentes",
     "q1": {
-      "body": "movie-web n'héberge aucun contenu. Lorsque vous cliquez sur un élément à regarder, une recherche est effectuée sur Internet pour trouver le média sélectionné (sur l'écran de chargement et dans l'onglet \"sources vidéo\", vous pouvez voir quelle source vous utilisez). Les médias ne sont jamais téléchargés par movie-web, tout passe par ce mécanisme de recherche.",
+      "body": "kami-movie n'héberge aucun contenu. Lorsque vous cliquez sur un élément à regarder, une recherche est effectuée sur Internet pour trouver le média sélectionné (sur l'écran de chargement et dans l'onglet \"sources vidéo\", vous pouvez voir quelle source vous utilisez). Les médias ne sont jamais téléchargés par movie-web, tout passe par ce mécanisme de recherche.",
       "title": "D'où vient le contenu ?"
     },
     "q2": {
@@ -11,7 +11,7 @@
       "title": "Où puis-je demander une série ou un film ?"
     },
     "q3": {
-      "body": "Nos résultats de recherche sont fournis et affichés par The Movie Database (TMDB), que nos sources soient propriétaires du contenu ou non.",
+      "body": "Que nos sources soient propriétaires du contenu ou non, The Movie Database (TMDB) fournit et affiche nos résultats de recherche.",
       "title": "Les résultats de la recherche affichent l'émission ou le film, pourquoi ne puis-je pas le lire ?"
     },
     "title": "À propos de movie-web"
@@ -35,7 +35,7 @@
       "description": "Veuillez fournir votre passphrase pour accéder à votre compte",
       "deviceLengthError": "Veuillez saisir un nom d'appareil",
       "passphraseLabel": "Passphrase de 12 mots",
-      "passphrasePlaceholder": "Passphrase",
+      "passphrasePlaceholder": "Phrase secrète",
       "submit": "Se connecter",
       "title": "Se connecter à votre compte",
       "validationError": "Passphrase incorrecte ou incomplete"
@@ -83,19 +83,20 @@
       "disclaimerText": "Le site movie-web ne stocke pas de fichiers, mais propose des liens vers des services externes. Les problèmes juridiques doivent être traités avec les fournisseurs et les hébergeurs de fichiers. Les fichiers multimédias diffusés par les fournisseurs de vidéos ne sont pas couverts par movie-web."
     },
     "links": {
-      "github": "GitHub",
+      "discord": "Discord",
       "dmca": "DMCA",
-      "linkedin": "Linkedin"
+      "github": "GitHub"
     },
     "tagline": "Cette application de streaming open source vous permet de regarder vos émissions et films préférés."
   },
   "global": {
-    "name": "Kami Movie",
+    "name": "kami-movie",
     "pages": {
       "about": "À propos",
       "dmca": "DMCA",
       "login": "Se connecter",
-      "pagetitle": "{{title}} - Kami Movie",
+      "onboarding": "Setup",
+      "pagetitle": "{{title}} - kami-movie",
       "register": "Créer un compte",
       "settings": "Paramètres"
     }
@@ -120,18 +121,21 @@
     },
     "titles": {
       "day": {
-        "default": "Que voulez-vous regarder cet après-midi ?"
+        "default": "Que voulez-vous regarder cet après-midi ?",
+        "extra": [
+          "Amoureux des films d'animation ? Suzume est un incontournable."
+        ]
       },
       "morning": {
         "default": "Que voulez-vous regarder ce matin ?",
         "extra": [
-          "J'ai entendu dire que Before Sunrise était un bon film"
+          "Les films, c'est comme les voyages : ça nous ouvre l'esprit"
         ]
       },
       "night": {
         "default": "Que voulez-vous regarder ce soir ?",
         "extra": [
-          "Fatigué ? J'ai entendu dire que L'Exorciste était bien."
+          "À la recherche d'un bon film d'horreur à regarder ? J'ai entendu dire que Scream était bien."
         ]
       }
     }
@@ -162,6 +166,69 @@
     "message": "Nous avons cherché partout : sous les poubelles, dans le placard, derrière le proxy, mais nous n'avons finalement pas trouvé la page que vous cherchez.",
     "title": "Impossible de trouver cette page"
   },
+  "onboarding": {
+    "defaultConfirm": {
+      "cancel": "Annuler",
+      "confirm": "Utiliser la configuration de départ",
+      "description": "La configuration par défaut n'offre pas les meilleurs flux et peut être insupportablement lente.",
+      "title": "Es-tu sûr ?"
+    },
+    "extension": {
+      "back": "Retour en arrière",
+      "explainer": "En utilisant l'extension de navigateur, vous pouvez obtenir les meilleurs flux que nous avons à offrir. Avec juste une simple installation.",
+      "explainerIos": "Malheureusement, l'extension web n'est pas prise en charge sur iOS, appuyez sur <bold> Retour en arrière </bold> pour choisir une autre option.",
+      "extensionHelp": "Si vous avez installé l'extension mais qu'elle n'est pas détectée, <bold>ouvrez l'extension via le menu des extensions de votre navigateur</bold> et suivez les étapes à l'écran.",
+      "linkChrome": "Installer l'extension Chrome",
+      "linkFirefox": "Installer l'extension Firefox",
+      "notDetecting": "L'extension est installée sur Chrome mais le site ne la détecte pas ? Essayez de rafraîchir la page !",
+      "notDetectingAction": "Rafraîchir la page",
+      "status": {
+        "disallowed": "L'extension n'est pas activée pour cette page",
+        "disallowedAction": "Activer l'extension",
+        "failed": "Échec de la demande de statut",
+        "loading": "En attendant que vous installiez l'extension",
+        "outdated": "Version d'extension trop ancienne",
+        "success": "L'extension fonctionne comme prévu !"
+      },
+      "submit": "Continuer",
+      "title": "Commençons par une extension"
+    },
+    "proxy": {
+      "back": "Retour en arrière",
+      "explainer": "Avec la méthode du proxy, vous pouvez obtenir des flux de bonne qualité en créant un proxy en libre-service.",
+      "input": {
+        "errorConnection": "Impossible de se connecter au proxy",
+        "errorInvalidUrl": "URL non valide",
+        "errorNotProxy": "Je m'attendais à un proxy mais j'ai obtenu un site Web",
+        "label": "URL du proxy",
+        "placeholder": "https://"
+      },
+      "link": "Apprenez à créer un proxy",
+      "submit": "Soumettre le proxy",
+      "title": "Créons un nouveau proxy"
+    },
+    "start": {
+      "explainer": "Pour obtenir les meilleurs flux possibles, vous devrez choisir la méthode de streaming que vous souhaitez utiliser.",
+      "options": {
+        "default": {
+          "text": "Je ne veux pas de flux de bonne qualité,<0 /> <1>use the default setup</1>"
+        },
+        "extension": {
+          "action": "Installer l'extension",
+          "description": "Installez l'extension de navigateur et accédez aux meilleures sources.",
+          "quality": "Meilleur qualité",
+          "title": "Extension du navigateur"
+        },
+        "proxy": {
+          "action": "Configurez le proxy",
+          "description": "Configurez un proxy en seulement 5 minutes et accédez à d'excellentes sources.",
+          "quality": "Bonne qualité",
+          "title": "Proxy personnalisé"
+        }
+      },
+      "title": "Commençons par vous configurer movie-web"
+    }
+  },
   "overlays": {
     "close": "Fermer"
   },
@@ -176,10 +243,9 @@
     "menus": {
       "downloads": {
         "disclaimer": "Les téléchargements sont effectués directement par le fournisseur. movie-web n'a aucun contrôle sur la manière dont les téléchargements sont effectués.",
-        "downloadPlaylist": "Télécharger la liste de lecture",
         "downloadSubtitle": "Télécharger les sous-titres",
         "downloadVideo": "Télécharger la vidéo",
-        "hlsDisclaimer": "Les téléchargements sont pris directement de la source. Movie-Web n'exerce aucun contrôle sur les méthodes des fournisseurs de téléchargement. Veuillez noter que vous téléchargez une liste de lecture HLS, destinée aux utilisateurs habitués au streaming multimédia avancé.",
+        "hlsDisclaimer": "Les téléchargements sont effectués directement auprès du fournisseur. movie-web n'a aucun contrôle sur la façon dont les téléchargements sont fournis.<br /><br />Veuillez noter que vous téléchargez une liste de lecture HLS, <bold>il n'est pas recommandé de la télécharger si vous n'êtes pas familier avec les formats de streaming avancés. </bold>. Essayez différentes sources pour différents formats.",
         "onAndroid": {
           "1": "Pour télécharger sur Android, cliquez sur le bouton de téléchargement puis, sur la nouvelle page, <bold>tapez et maintenez </bold> sur la vidéo, puis sélectionnez <bold>enregistrer</bold>.",
           "shortTitle": "Télécharger / Android",
@@ -203,7 +269,8 @@
         "episodeBadge": "E{{episode}}",
         "loadingError": "Erreur de chargement de la saison",
         "loadingList": "Chargement...",
-        "loadingTitle": "Chargement..."
+        "loadingTitle": "Chargement...",
+        "unairedEpisodes": "Un ou plusieurs épisodes de cette saison ont été désactivés car ils n'ont pas encore été diffusés."
       },
       "playback": {
         "speedLabel": "Vitesse de lecture",
@@ -211,7 +278,7 @@
       },
       "quality": {
         "automaticLabel": "Qualité automatique",
-        "hint": "Vous pouvez essayer de <0>changer de fournisseur/0> pour obtenir différentes options de qualité.",
+        "hint": "Vous pouvez essayer de <0>changer de fournisseur</0> pour obtenir différentes options de qualité.",
         "iosNoQuality": "En raison des limitations définies par Apple, la sélection de la qualité n'est pas disponible sur iOS pour cette source. Vous pouvez essayer <0>de passer à une autre source</0> pour obtenir des options de qualité différentes.",
         "title": "Qualité"
       },
@@ -255,9 +322,24 @@
       }
     },
     "metadata": {
+      "api": {
+        "text": "Impossible de charger les métadonnées de l'API, veuillez vérifier votre connexion Internet.",
+        "title": "Échec du chargement des métadonnées de l'API"
+      },
+      "dmca": {
+        "badge": "Supprimé",
+        "text": "Ce média n'est plus disponible en raison d'un avis de retrait ou d'une réclamation pour atteinte aux droits d'auteur.",
+        "title": "Le média a été supprimé"
+      },
+      "extensionPermission": {
+        "badge": "Autorisation manquante",
+        "button": "Utiliser l'extension",
+        "text": "Vous disposez de l'extension de navigateur, mais nous avons besoin de votre autorisation pour commencer à utiliser l'extension.",
+        "title": "Configurer l'extension"
+      },
       "failed": {
         "badge": "Échec",
-        "homeButton": "Retour à la maison",
+        "homeButton": "Revenir à l'accueil",
         "text": "Impossible de charger les métadonnées du média à partir de TMDB. Veuillez vérifier si TMDB est en panne ou bloqué sur votre connexion internet.",
         "title": "Échec du chargement des métadonnées"
       },
@@ -304,6 +386,12 @@
       "remaining": "{{timeLeft}} restant • Fini à {{timeFinished, datetime}}",
       "shortRegular": "{{timeWatched}}",
       "shortRemaining": "-{{timeLeft}}"
+    },
+    "turnstile": {
+      "description": "Veuillez vérifier que vous êtes bien humain en complétant le Captcha à droite. C'est pour assurer la sécurité de movie-web !",
+      "error": "Échec de la vérification de votre humanité. Veuillez réessayer.",
+      "title": "Nous devons vérifier que vous êtes un humain.",
+      "verifyingHumanity": "Vérification de votre humanité..."
     }
   },
   "screens": {
@@ -376,24 +464,49 @@
     },
     "connections": {
       "server": {
-        "description": "Si vous souhaitez vous connecter à un backend personnalisé pour stocker vos données, activez cette option et indiquez l'URL.",
+        "description": "Si vous désirez utiliser un système de stockage externe pour enregistrer vos données, activez cette option et indiquez l'URL. <0>Instructions.</0>",
         "label": "Serveur personnalisé",
         "urlLabel": "URL du serveur personnalisé"
+      },
+      "setup": {
+        "doSetup": "Faire la configuration",
+        "errorStatus": {
+          "description": "Il semble qu'un ou plusieurs éléments de cette configuration nécessitent votre attention.",
+          "title": "Quelque chose nécessite votre attention"
+        },
+        "itemError": "Ce paramètre présente un problème. Résolvez le problème en redémarrant la configuration.",
+        "items": {
+          "default": "Configuration par défaut",
+          "extension": "Extension",
+          "proxy": "Proxy personnalisé"
+        },
+        "redoSetup": "Refaire la configuration",
+        "successStatus": {
+          "description": "Tout est réuni pour que vous puissiez commencer à regarder vos médias préférés.",
+          "title": "Tout est mis en place !"
+        },
+        "unsetStatus": {
+          "description": "Pour commencer le processus de configuration, veuillez cliquer sur le bouton à droite.",
+          "title": "Vous n'avez pas fait la configuration"
+        }
       },
       "title": "Connexions",
       "workers": {
         "addButton": "Ajouter un nouveau worker",
-        "description": "Pour que l'application fonctionne, tout le trafic est acheminé via des proxys. Activez cette option si vous souhaitez faire appel à vos propres workers.",
+        "description": "Pour que l'application fonctionne, tout le trafic est acheminé via des proxys. Activez cette option si vous souhaitez faire appel à vos propres workers. <0>Instructions.</0>",
         "emptyState": "Pas encore de workers, ajoutez-en un ci-dessous",
         "label": "Utiliser des agents proxy personnalisés",
         "urlLabel": "URLs des workers",
         "urlPlaceholder": "https://"
       }
     },
-    "locale": {
-      "language": "Langue de l'application",
-      "languageDescription": "Langue appliquée dans l'ensemble de l'app.",
-      "title": "Local"
+    "preferences": {
+      "language": "Language de l'application",
+      "languageDescription": "Langue appliquée à l’ensemble de l’application.",
+      "thumbnail": "Générer des miniatures",
+      "thumbnailDescription": "La plupart du temps, les vidéos n'ont pas de miniatures. Vous pouvez activer ce paramètre pour les générer à la volée, mais ils peuvent ralentir votre vidéo.",
+      "thumbnailLabel": "Générer des miniatures",
+      "title": "Préférences"
     },
     "reset": "Réinitialiser",
     "save": "Sauvegarder",
@@ -414,7 +527,7 @@
     "subtitles": {
       "backgroundLabel": "Opacité du fond",
       "colorLabel": "Couleur",
-      "previewQuote": "Je ne dois pas avoir peur. La peur est ce qui nous tue de l'intérieur.",
+      "previewQuote": "Plus l'obscurité est profonde, plus la lumière brille.",
       "textSizeLabel": "Taille des textes",
       "title": "Sous-titres"
     },

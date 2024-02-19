@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd());
   return {
     plugins: [
-      million.vite({ auto: true }),
+      million.vite({ auto: true, mute: true }),
       handlebars({
         vars: {
           opensearchEnabled: env.VITE_OPENSEARCH_ENABLED === "true",
@@ -66,8 +66,8 @@ export default defineConfig(({ mode }) => {
           "safari-pinned-tab.svg",
         ],
         manifest: {
-          name: "kami-movie",
-          short_name: "kami-movie",
+          name: "movie-web",
+          short_name: "movie-web",
           description: "The place for your favourite movies & shows",
           theme_color: "#120f1d",
           background_color: "#120f1d",
@@ -124,8 +124,8 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         output: {
           manualChunks(id: string) {
-            if (id.includes("@sozialhelden+ietf-language-tags")) {
-              return "ietf-language-tags";
+            if (id.includes("@sozialhelden+ietf-language-tags") || id.includes("country-language")) {
+              return "language-db";
             }
             if (id.includes("hls.js")) {
               return "hls";
