@@ -80,7 +80,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Hinweis",
-      "disclaimerText": "kami-movie hostet keine Dateien, sondern verlinkt lediglich auf Dienste Dritter. Rechtliche Fragen sollten mit den Dateihostern und -anbietern geklärt werden. movie-web übernimmt keine Verantwortung für die von den Videoanbietern angezeigten Mediendateien."
+      "disclaimerText": "movie-web hostet keine Dateien, sondern verlinkt lediglich auf Dienste Dritter. Rechtliche Fragen sollten mit den Dateihostern und -anbietern geklärt werden. movie-web übernimmt keine Verantwortung für die von den Videoanbietern angezeigten Mediendateien."
     },
     "links": {
       "discord": "Discord",
@@ -116,7 +116,10 @@
       "failed": "Das Medium wurde nicht gefunden, bitte versuchen Sie es erneut!",
       "loading": "Wird geladen...",
       "noResults": "Wir haben nichts gefunden!",
-      "placeholder": "Was möchtest du schauen?",
+      "placeholder": {
+        "default": "Was möchtest du schauen?",
+        "extra": []
+      },
       "sectionTitle": "Suchergebnisse"
     },
     "titles": {
@@ -128,15 +131,11 @@
       },
       "morning": {
         "default": "Was würdest du diesen Morgen gerne schauen?",
-        "extra": [
-          "Before Sunrise soll gut sein"
-        ]
+        "extra": ["Before Sunrise soll gut sein"]
       },
       "night": {
         "default": "Was möchtest du diesen Abend gerne schauen?",
-        "extra": [
-          "Müde? Ich hab gehört The Exorcist soll gut sein."
-        ]
+        "extra": ["Müde? Ich hab gehört The Exorcist soll gut sein."]
       }
     }
   },

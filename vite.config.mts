@@ -24,6 +24,7 @@ const captioningPackages = [
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd());
   return {
+    base: env.VITE_BASE_URL || '/',
     plugins: [
       million.vite({ auto: true, mute: true }),
       handlebars({
@@ -66,8 +67,8 @@ export default defineConfig(({ mode }) => {
           "safari-pinned-tab.svg",
         ],
         manifest: {
-          name: "movie-web",
-          short_name: "movie-web",
+          name: "kami-movie",
+          short_name: "kami-movie",
           description: "The place for your favourite movies & shows",
           theme_color: "#120f1d",
           background_color: "#120f1d",

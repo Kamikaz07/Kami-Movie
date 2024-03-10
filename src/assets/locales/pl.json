@@ -80,7 +80,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Zastrzeżenie",
-      "disclaimerText": "kami-movie nie przechowuje żadnych plików, zawiera jedynie łącza do usług stron trzecich. Kwestie prawne należy konsultować z hostami plików i dostawcami. movie-web nie ponosi odpowiedzialności za jakiekolwiek pliki multimedialne prezentowane przez dostawców wideo."
+      "disclaimerText": "movie-web nie przechowuje żadnych plików, zawiera jedynie łącza do usług stron trzecich. Kwestie prawne należy konsultować z hostami plików i dostawcami. movie-web nie ponosi odpowiedzialności za jakiekolwiek pliki multimedialne prezentowane przez dostawców wideo."
     },
     "links": {
       "discord": "Discord",
@@ -116,7 +116,10 @@
       "failed": "Nie udało się znaleźć mediów, Spróbuj ponownie!",
       "loading": "Wczytywanie...",
       "noResults": "Nie mogliśmy niczego znaleźć!",
-      "placeholder": "Co chciałbyś obejrzeć?",
+      "placeholder": {
+        "default": "Co chciałbyś obejrzeć?",
+        "extra": []
+      },
       "sectionTitle": "Wyniki wyszukiwania"
     },
     "titles": {
@@ -128,15 +131,11 @@
       },
       "morning": {
         "default": "Co chciałbyś obejrzeć dziś rano?",
-        "extra": [
-          "Słyszałem że „Przed wschodem słońca” jest dobre"
-        ]
+        "extra": ["Słyszałem że „Przed wschodem słońca” jest dobre"]
       },
       "night": {
         "default": "Co chciałbyś obejrzeć dziś wieczorem?",
-        "extra": [
-          "Zmęczony? Słyszałem że „Egzorcysta” jest dobry."
-        ]
+        "extra": ["Zmęczony? Słyszałem że „Egzorcysta” jest dobry."]
       }
     }
   },

@@ -1,6 +1,6 @@
 {
   "about": {
-    "description": "kami-movie è un'applicazione web che cerca per gli stream sull'internet. Il team cerca di usare un approccio per lo più minimalista per usufruire del contenuto.",
+    "description": "kami-movie è un'applicazione web che ricerca dei stream sull'internet. Il team cerca di usare un approccio prevalentemente minimalista per usufruire del contenuto.",
     "faqTitle": "Domande comuni",
     "q1": {
       "body": "kami-movie non ospita alcun contento. Quando clicci su qualcosa da guardare, movie-web cerca l'internet per media di vostra scelta (Sull schermata di caricamento e nell tab 'sorgenti video' si può vedere quale sorgente si sta utilizzando). I media non sono mai caricati da movie-web, tutto è attraverso questo meccanismo di ricerca.",
@@ -30,14 +30,14 @@
       "passphraseFrameLabel": "Frase password",
       "title": "La tua frase password"
     },
-    "hasAccount": "Hai già un account? <0>Accedi </0>",
+    "hasAccount": "Hai già un account? <0>Accedi.</0>",
     "login": {
-      "description": "Inserisci la tua frase password per accedere al proprio account",
+      "description": "Inserisci la tua frase password per accedere al vostro account",
       "deviceLengthError": "Inserisci un nome per il dispositivo",
       "passphraseLabel": "Frase password di 12 parole",
       "passphrasePlaceholder": "Frase password",
       "submit": "Accedi",
-      "title": "Accedi al proprio account",
+      "title": "Accedi al vostro account",
       "validationError": "Frase password incompleta o sbagliata"
     },
     "register": {
@@ -57,11 +57,13 @@
       },
       "host": "Ti stai collegando a <0>{{hostname}}</0> - conferma la tua fiducia prima di creare un account",
       "no": "Indietro",
+      "noHost": "Il server non è configurato, quindi non si può creare un account",
+      "noHostTitle": "Server non è configurato!",
       "title": "Ti fidi di questo server?",
       "yes": "Mi fido di questo server"
     },
     "verify": {
-      "description": "Inserisci il tuo frase password da prima per confermare che è salvato per creare il proprio account",
+      "description": "Inserisci il tuo frase password da prima per confermare che è salvato per creare un account",
       "invalidData": "I dati non sono validi",
       "noMatch": "Frase password non corrisponde",
       "passphraseLabel": "La propria frase password di 12 parole",
@@ -80,7 +82,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Disclaimer",
-      "disclaimerText": "kami-movie non ospita qualsiasi file, si collega solo a fonti di terze parti. Se avete problemi legali, rivolgetevi ai file host e ai provider. movie-web non è responsabile per i file multimediali mostrati dai video provider."
+      "disclaimerText": "movie-web non ospita qualsiasi file, si collega solo a fonti di terze parti. Se avete problemi legali, rivolgetevi ai file host e ai provider. movie-web non è responsabile per i file multimediali mostrati dai video provider."
     },
     "links": {
       "discord": "Discord",
@@ -116,7 +118,15 @@
       "failed": "Impossibile trovare i media, riprova!",
       "loading": "Caricamento...",
       "noResults": "Non abbiamo trovato nulla!",
-      "placeholder": "Cosa vuoi guardare?",
+      "placeholder": {
+        "default": "Cosa vuoi guardare?",
+        "extra": [
+          "Cosa vorresti esplorare?",
+          "Cosa c’è nella tua lista di guardare?",
+          "Cos’è il vostro preferito film?",
+          "Cos’è il vostro preferito serie?"
+        ]
+      },
       "sectionTitle": "Risultati della ricerca"
     },
     "titles": {
@@ -242,6 +252,7 @@
     },
     "menus": {
       "downloads": {
+        "copyHlsPlaylist": "Copia link HLS playlist",
         "disclaimer": "I download vengono effettuati direttamente dal provider. movie-web non ha il controllo sulle modalità di fornitura dei download.",
         "downloadSubtitle": "Scarica sottotitolo attuale",
         "downloadVideo": "Scarica video",
@@ -389,9 +400,9 @@
     },
     "turnstile": {
       "description": "Verifica che siate umani completando il Captcha sulla destra. Questo serve a mantenere movie-web sicuro!",
-      "error": "Impossibile verificare il proprio umanità. Riprova.",
+      "error": "Impossibile verificare la vostra umanità. Riprova.",
       "title": "Dobbiamo verificare che lei sia umano.",
-      "verifyingHumanity": "verificare il proprio umanità..."
+      "verifyingHumanity": "Verificare la vostra umanità..."
     }
   },
   "screens": {
@@ -400,12 +411,12 @@
       "title": "DMCA"
     },
     "loadingApp": "Caricamento dell'applicazione",
-    "loadingUser": "Caricamento del proprio profilo",
+    "loadingUser": "Caricamento del vostro profilo",
     "loadingUserError": {
       "logout": "Esci",
       "reset": "Ripristino del server personalizzato",
-      "text": "Impossibile caricare il proprio profilo",
-      "textWithReset": "Impossibile caricare il proprio profile dal server personalizzato, vorresti ripristinare il server predefinito?"
+      "text": "Impossibile caricare il vostro profilo",
+      "textWithReset": "Impossibile caricare il vostro profile dal server personalizzato, vorresti ripristinare il server predefinito?"
     },
     "migration": {
       "failed": "Impossible migrare i propri dati.",
@@ -424,7 +435,7 @@
         "delete": {
           "button": "Eliminare l'account",
           "confirmButton": "Eliminare l'account",
-          "confirmDescription": "Sei sicuro che vuoi eliminare il proprio account? Tutti i dati propri andranno persi!",
+          "confirmDescription": "Sei sicuro che vuoi eliminare il vostro account? Tutti i dati andranno persi!",
           "confirmTitle": "Sei sicuro?",
           "text": "Questa azione è irreversibile. Tutti i propri dati verranno eliminati e non sarà possibile recuperare nulla.",
           "title": "Eliminare l'account"

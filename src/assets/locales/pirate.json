@@ -80,7 +80,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Disclaimer",
-      "disclaimerText": "kami-movie does not host any files, it merely links to 3rd party services. Legal issues should be taken up with the file hosts and providers. movie-web be not responsible for any media files shown by the video providers."
+      "disclaimerText": "movie-web does not host any files, it merely links to 3rd party services. Legal issues should be taken up with the file hosts and providers. movie-web be not responsible for any media files shown by the video providers."
     },
     "links": {
       "discord": "Discord",
@@ -116,7 +116,10 @@
       "failed": "Arrrr failed to find media, try again!",
       "loading": "Hold yer horses, me heartie!",
       "noResults": "We couldn't find anythin', arrr!",
-      "placeholder": "What do ye want to watch?",
+      "placeholder": {
+        "default": "What do ye want to watch?",
+        "extra": []
+      },
       "sectionTitle": "Searchin' results"
     },
     "titles": {

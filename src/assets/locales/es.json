@@ -57,6 +57,8 @@
       },
       "host": "Te estás conectando a <0>{{hostname}}</0> - por favor, confirma si confías en este antes de crear una cuenta",
       "no": "Regresar",
+      "noHost": "El servidor no se ha configurado, por lo tanto, no puede crear una cuenta",
+      "noHostTitle": "¡El servidor no está configurado!",
       "title": "¿Confías en este servidor?",
       "yes": "Confío en este servidor"
     },
@@ -80,7 +82,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Descargo de responsabilidad",
-      "disclaimerText": "kami-movie no aloja ningún archivo, simplemente enlaza a servicios de terceros. Los problemas legales deben ser tratados con los proveedores de archivos y servicios. movie-web no se hace responsable de los archivos multimedia mostrados por los proveedores de vídeo."
+      "disclaimerText": "movie-web no aloja ningún archivo, simplemente enlaza a servicios de terceros. Los problemas legales deben ser tratados con los proveedores de archivos y servicios. movie-web no se hace responsable de los archivos multimedia mostrados por los proveedores de vídeo."
     },
     "links": {
       "discord": "Discord",
@@ -116,7 +118,15 @@
       "failed": "¡Error al encontrar contenido, inténtalo de nuevo!",
       "loading": "Cargando...",
       "noResults": "¡No pudimos encontrar nada!",
-      "placeholder": "¿Qué te gustaría ver?",
+      "placeholder": {
+        "default": "¿Qué te gustaría ver?",
+        "extra": [
+          "¿Qué quieres explorar?",
+          "¿Qué hay en tu lista de reproducción?",
+          "¿Cuál es tu película favorita?",
+          "¿Cuál es tu serie favorita?"
+        ]
+      },
       "sectionTitle": "Resultados de búsqueda"
     },
     "titles": {
@@ -242,6 +252,7 @@
     },
     "menus": {
       "downloads": {
+        "copyHlsPlaylist": "Copiar enlace de reproducción HLS",
         "disclaimer": "Las descargas se realizan directamente desde el proveedor. movie-web no tiene control sobre cómo se proporcionan las descargas.",
         "downloadSubtitle": "Descargar subtítulo actual",
         "downloadVideo": "Descargar vídeo",

@@ -80,7 +80,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Sanggahan",
-      "disclaimerText": "kami-movie tidak menyimpan berkas media apapun, aplikasi ini hanya menampilkan tautan dari pihak ketiga. Sengketa hukum harus diajukan langsung kepada penyedia pihak ketiga. movie-web tidak bertanggung jawab atas berkas media yang ditampilkan oleh penyedia pihak ketiga."
+      "disclaimerText": "movie-web tidak menyimpan berkas media apapun, aplikasi ini hanya menampilkan tautan dari pihak ketiga. Sengketa hukum harus diajukan langsung kepada penyedia pihak ketiga. movie-web tidak bertanggung jawab atas berkas media yang ditampilkan oleh penyedia pihak ketiga."
     },
     "links": {
       "discord": "Discord",
@@ -115,7 +115,10 @@
       "failed": "Gagal menemukan media, coba lagi!",
       "loading": "Memuat...",
       "noResults": "Kami tidak dapat menemukan apapun!",
-      "placeholder": "Apa yang ingin anda tonton?",
+      "placeholder": {
+        "default": "Apa yang ingin anda tonton?",
+        "extra": []
+      },
       "sectionTitle": "Hasil pencarian"
     },
     "titles": {
@@ -127,15 +130,11 @@
       },
       "morning": {
         "default": "Apa yang ingin anda tonton pagi ini?",
-        "extra": [
-          "Kayaknya film Before Sunrise bagus deh"
-        ]
+        "extra": ["Kayaknya film Before Sunrise bagus deh"]
       },
       "night": {
         "default": "Apa yang ingin anda tonton malam ini?",
-        "extra": [
-          "Capek? Katanya The Exocist rekomended."
-        ]
+        "extra": ["Capek? Katanya The Exocist rekomended."]
       }
     }
   },

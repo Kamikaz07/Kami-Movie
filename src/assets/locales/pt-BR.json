@@ -80,10 +80,10 @@
   "footer": {
     "legal": {
       "disclaimer": "Aviso legal",
-      "disclaimerText": "kami-movie não hospeda nenhum arquivo, apenas fornece links para serviços de terceiros. Questões legais devem ser tratadas com os hosts de arquivos e provedores. movie-web não é responsável por quaisquer arquivos de mídia exibidos pelos provedores de vídeo."
+      "disclaimerText": "movie-web não hospeda nenhum arquivo, apenas fornece links para serviços de terceiros. Questões legais devem ser tratadas com os hosts de arquivos e provedores. movie-web não é responsável por quaisquer arquivos de mídia exibidos pelos provedores de vídeo."
     },
     "links": {
-      "discord": "LinkedIn",
+      "discord": "Discord",
       "dmca": "DMCA",
       "github": "GitHub"
     },
@@ -116,7 +116,10 @@
       "failed": "Falha ao encontrar mídia, tente novamente!",
       "loading": "Carregando...",
       "noResults": "Não conseguimos encontrar nada!",
-      "placeholder": "O que você quer assistir?",
+      "placeholder": {
+        "default": "O que você quer assistir?",
+        "extra": []
+      },
       "sectionTitle": "Resultados da pesquisa"
     },
     "titles": {
@@ -128,15 +131,11 @@
       },
       "morning": {
         "default": "O que você gostaria de assistir esta manhã?",
-        "extra": [
-          "Ouvi dizer que Antes do Amanhecer é bom"
-        ]
+        "extra": ["Ouvi dizer que Antes do Amanhecer é bom"]
       },
       "night": {
         "default": "O que você gostaria de assistir esta noite?",
-        "extra": [
-          "Cansado? Ouvi dizer que O Exorcista é bom."
-        ]
+        "extra": ["Cansado? Ouvi dizer que O Exorcista é bom."]
       }
     }
   },
@@ -242,6 +241,7 @@
     },
     "menus": {
       "downloads": {
+        "copyHlsPlaylist": "Copiar link da playlist HLS",
         "disclaimer": "Os downloads são feitos diretamente do provedor. movie-web não tem controle sobre como os downloads são fornecidos.",
         "downloadSubtitle": "Baixar legenda atual",
         "downloadVideo": "Baixar vídeo",

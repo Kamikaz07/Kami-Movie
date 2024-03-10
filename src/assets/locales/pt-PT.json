@@ -80,10 +80,10 @@
   "footer": {
     "legal": {
       "disclaimer": "Aviso legal",
-      "disclaimerText": "kami-movie não hospeda quaisquer ficheiros, apenas faz ligações para serviços de terceiros. Problemas legais devem ser tratados com os anfitriões e fornecedores de ficheiros. O movie-web não é responsável por quaisquer ficheiros multimédia mostrados pelos fornecedores de vídeo."
+      "disclaimerText": "movie-web não hospeda quaisquer ficheiros, apenas faz ligações para serviços de terceiros. Problemas legais devem ser tratados com os anfitriões e fornecedores de ficheiros. O movie-web não é responsável por quaisquer ficheiros multimédia mostrados pelos fornecedores de vídeo."
     },
     "links": {
-      "discord": "LinkedIn",
+      "discord": "Discord",
       "dmca": "DMCA",
       "github": "GitHub"
     },
@@ -115,7 +115,10 @@
       "failed": "Falha ao encontrar mídia, tente novamente!",
       "loading": "A carregar...",
       "noResults": "Não conseguimos encontrar nada!",
-      "placeholder": "O que deseja assistir?",
+      "placeholder": {
+        "default": "O que deseja assistir?",
+        "extra": []
+      },
       "sectionTitle": "Resultados da pesquisa"
     },
     "titles": {
@@ -127,15 +130,11 @@
       },
       "morning": {
         "default": "O que gostaria de assistir esta manhã?",
-        "extra": [
-          "Dizem que Antes do Amanhecer é bom"
-        ]
+        "extra": ["Dizem que Antes do Amanhecer é bom"]
       },
       "night": {
         "default": "O que gostaria de assistir esta noite?",
-        "extra": [
-          "Cansado? Dizem que O Exorcista é bom."
-        ]
+        "extra": ["Cansado? Dizem que O Exorcista é bom."]
       }
     }
   },

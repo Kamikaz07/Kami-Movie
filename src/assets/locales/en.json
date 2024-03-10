@@ -3,11 +3,11 @@
     "description": "kami-movie is a web application that searches the internet for streams. The team aims for a mostly minimalistic approach to consuming content.",
     "faqTitle": "Common questions",
     "q1": {
-      "body": "kami-movie does not host any content. When you click on something to watch, the internet is searched for the selected media (On the loading screen and in the 'video sources' tab you can see which source you're using). Media never gets uploaded by kami-movie, everything is through this searching mechanism.",
+      "body": "kami-movie does not host any content. When you click on something to watch, the internet is searched for the selected media (On the loading screen and in the 'video sources' tab you can see which source you're using). Media never gets uploaded by movie-web, everything is through this searching mechanism.",
       "title": "Where does the content come from?"
     },
     "q2": {
-      "body": "It's not possible to request a show or movie, kami-movie does not manage any content. All content is viewed through sources on the internet.",
+      "body": "It's not possible to request a show or movie, movie-web does not manage any content. All content is viewed through sources on the internet.",
       "title": "Where can I request a show or movie?"
     },
     "q3": {
@@ -55,6 +55,8 @@
         "text": "Did you configure it correctly?",
         "title": "Failed to reach server"
       },
+      "noHostTitle": "Server not configured!",
+      "noHost": "The server has not been configured, therefore you cannot create an account",
       "host": "You are connecting to <0>{{hostname}}</0> - please confirm you trust it before making an account",
       "no": "Go back",
       "title": "Do you trust this server?",
@@ -80,10 +82,10 @@
   "footer": {
     "legal": {
       "disclaimer": "Disclaimer",
-      "disclaimerText": "kami-movie does not host any files, it merely links to 3rd party services. Legal issues should be taken up with the file hosts and providers. movie-web is not responsible for any media files shown by the video providers."
+      "disclaimerText": "movie-web does not host any files, it merely links to 3rd party services. Legal issues should be taken up with the file hosts and providers. movie-web is not responsible for any media files shown by the video providers."
     },
     "links": {
-      "discord": "LinkedIn",
+      "discord": "Discord",
       "dmca": "DMCA",
       "github": "GitHub"
     },
@@ -116,7 +118,15 @@
       "failed": "Failed to find media, try again!",
       "loading": "Loading...",
       "noResults": "We couldn't find anything!",
-      "placeholder": "What do you want to watch?",
+      "placeholder": {
+        "default": "What do you want to watch?",
+        "extra": [
+          "What do you want to explore?",
+          "What's on your watchlist?",
+          "What's your favorite movie?",
+          "What's your favorite series?"
+        ]
+      },
       "sectionTitle": "Search results"
     },
     "titles": {

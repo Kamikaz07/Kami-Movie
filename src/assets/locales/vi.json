@@ -80,7 +80,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Tuyên bố miễn trừ trách nhiệm",
-      "disclaimerText": "kami-movie không lưu trữ bất kì file nào, nó chỉ đến những đường dẫn của các dịch vụ bên thứ ba. Bất kỳ vấn đề nào về pháp lý nên được đưa đến chủ sỡ hữu của file hoặc những nhà cung cấp đó. movie-web hoàn toàn không chịu trách nhiệm cho bất kỳ nội dung nào được chiếu từ các nhà cung cấp."
+      "disclaimerText": "movie-web không lưu trữ bất kì file nào, nó chỉ đến những đường dẫn của các dịch vụ bên thứ ba. Bất kỳ vấn đề nào về pháp lý nên được đưa đến chủ sỡ hữu của file hoặc những nhà cung cấp đó. movie-web hoàn toàn không chịu trách nhiệm cho bất kỳ nội dung nào được chiếu từ các nhà cung cấp."
     },
     "links": {
       "discord": "Discord",
@@ -116,12 +116,30 @@
       "failed": "Không thể tìm thấy nội dung, hãy thử lại!",
       "loading": "Đang tải...",
       "noResults": "Chúng tôi không thể tìm thấy gì!",
-      "placeholder": "Bạn muốn xem gì?",
+      "placeholder": {
+        "default": "Bạn muốn xem gì?",
+        "extra": []
+      },
       "sectionTitle": "Kết quả tìm kiếm"
     },
     "titles": {
+      "day": {
+        "default": "Chiều nay bạn muốn coi gì?",
+        "extra": [
+          "Cảm thấy muốn phiêu lưu? Phim Công viên kỷ Jura có thể là sự lựa chọn hoàn hảo cho bạn."
+        ]
+      },
+      "morning": {
+        "default": "Sáng nay bạn muốn coi gì?",
+        "extra": [
+          "Tôi nghe nói rằng bộ phim Before Sunrise hay đấy"
+        ]
+      },
       "night": {
-        "default": "Đêm nay bạn muốn coi gì?"
+        "default": "Đêm nay bạn muốn coi gì?",
+        "extra": [
+          "Cảm thấy mệt? Tôi nghe nói phim The Exorcist hay đấy."
+        ]
       }
     }
   },
@@ -140,6 +158,7 @@
       "about": "Về chúng tôi",
       "donation": "Ủng hộ",
       "logout": "Đăng xuất",
+      "register": "Đồng bộ hóa với đám mây",
       "settings": "Cài đặt",
       "support": "Hỗ trợ"
     }
@@ -158,7 +177,8 @@
       "title": "Bạn có chắc không?"
     },
     "extension": {
-      "back": "Trở lại"
+      "back": "Trở lại",
+      "explainer": "Bạn có thể sử dụng các nguồn tốt nhất mà chúng tôi cung cấp bằng cách sử dụng tiện ích mở rộng trình duyệt. Đơn giản chỉ cần cài đặt."
     }
   },
   "player": {

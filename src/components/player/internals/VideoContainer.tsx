@@ -91,7 +91,7 @@ function VideoElement() {
   if (captionAsTrack && trackObjectUrl && language)
     subtitleTrack = (
       <track
-        label=""
+        label="movie-web"
         kind="subtitles"
         srcLang={language}
         src={trackObjectUrl}
