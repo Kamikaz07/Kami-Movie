@@ -11,7 +11,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { BrowserRouter, HashRouter } from "react-router-dom";
 import { useAsync } from "react-use";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Button } from "@/components/buttons/Button";
 import { Icon, Icons } from "@/components/Icon";
 import { Loading } from "@/components/layout/Loading";
@@ -155,6 +155,7 @@ root.render(
             <SettingsSyncer />
             <TheRouter>
               <MigrationRunner />
+              <SpeedInsights />
             </TheRouter>
           </ThemeProvider>
         </Suspense>
