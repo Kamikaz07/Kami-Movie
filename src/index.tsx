@@ -1,9 +1,9 @@
+import { Analytics } from "@vercel/analytics/react";
 import "@/setup/pwa";
 import "core-js/stable";
 import "./stores/__old/imports";
 import "@/setup/ga";
 import "@/assets/css/index.css";
-
 import { StrictMode, Suspense, useCallback } from "react";
 import type { ReactNode } from "react";
 import { createRoot } from "react-dom/client";
@@ -11,7 +11,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { BrowserRouter, HashRouter } from "react-router-dom";
 import { useAsync } from "react-use";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import { Button } from "@/components/buttons/Button";
 import { Icon, Icons } from "@/components/Icon";
 import { Loading } from "@/components/layout/Loading";
@@ -154,8 +154,8 @@ root.render(
             <BookmarkSyncer />
             <SettingsSyncer />
             <TheRouter>
+              <Analytics />
               <MigrationRunner />
-              <SpeedInsights />
             </TheRouter>
           </ThemeProvider>
         </Suspense>
