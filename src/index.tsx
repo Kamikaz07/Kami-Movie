@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "@/setup/pwa";
 import "core-js/stable";
 import "./stores/__old/imports";
@@ -155,6 +156,7 @@ root.render(
             <SettingsSyncer />
             <TheRouter>
               <Analytics />
+              <SpeedInsights />
               <MigrationRunner />
             </TheRouter>
           </ThemeProvider>
