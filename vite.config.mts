@@ -63,12 +63,12 @@ export default defineConfig(({ mode }) => {
         },
         includeAssets: [
           "favicon.ico",
-          "apple-touch-icon.png",
-          "safari-pinned-tab.svg",
+          "logo.png",
+          "logo.png",
         ],
         manifest: {
-          name: "movie-web",
-          short_name: "movie-web",
+          name: "kami-movie",
+          short_name: "kami-movie",
           description: "The place for your favourite movies & shows",
           theme_color: "#120f1d",
           background_color: "#120f1d",
@@ -76,25 +76,25 @@ export default defineConfig(({ mode }) => {
           start_url: "/",
           icons: [
             {
-              src: "android-chrome-192x192.png",
+              src: "logo.png",
               sizes: "192x192",
               type: "image/png",
               purpose: "any",
             },
             {
-              src: "android-chrome-512x512.png",
+              src: "logo.png",
               sizes: "512x512",
               type: "image/png",
               purpose: "any",
             },
             {
-              src: "android-chrome-192x192.png",
+              src: "logo.png",
               sizes: "192x192",
               type: "image/png",
               purpose: "maskable",
             },
             {
-              src: "android-chrome-512x512.png",
+              src: "logo.png",
               sizes: "512x512",
               type: "image/png",
               purpose: "maskable",

@@ -70,7 +70,7 @@ function ThemePreview(props: {
             props.active ? "opacity-100" : "opacity-0",
           )}
         />
-        {/* Mini movie-web. So Kawaiiiii! */}
+        {/* Mini kami-movie. So Kawaiiiii! */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/5 h-4/5 rounded-t-lg -mb-px bg-background-main overflow-hidden">
           <div className="relative w-full h-full">
             {/* Background color */}
