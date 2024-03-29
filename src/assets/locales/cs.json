@@ -1,20 +1,20 @@
 {
   "about": {
-    "description": "kami-movie je webová aplikace, která vyhledává na internetu proudy médií. Cílem týmu je převážně minimalistický přístup ke konzumaci obsahu.",
+    "description": "movie-web je webová aplikace, která vyhledává na internetu proudy médií. Cílem týmu je převážně minimalistický přístup ke konzumaci obsahu.",
     "faqTitle": "Často kladené otázky",
     "q1": {
-      "body": "kami-movie nehostuje žádný obsah. Když kliknete na něco, co chcete sledovat, na internetu se vyhledá vybrané médium (Na obrazovce načítání a na kartě 'zdroje videa' můžete vidět, který zdroj používáte). Média se nikdy nenahrávají kami-movieem, vše probíhá prostřednictvím tohoto vyhledávacího mechanismu.",
+      "body": "movie-web nehostuje žádný obsah. Když kliknete na něco, co chcete sledovat, na internetu se vyhledá vybrané médium (Na obrazovce načítání a na kartě 'zdroje videa' můžete vidět, který zdroj používáte). Média se nikdy nenahrávají movie-webem, vše probíhá prostřednictvím tohoto vyhledávacího mechanismu.",
       "title": "Kde bereme obsah?"
     },
     "q2": {
-      "body": "Není možné požádat o pořad nebo film, kami-movie nespravuje žádný obsah. Veškerý obsah je prohlížen prostřednictvím zdrojů na internetu.",
+      "body": "Není možné požádat o pořad nebo film, movie-web nespravuje žádný obsah. Veškerý obsah je prohlížen prostřednictvím zdrojů na internetu.",
       "title": "Kde můžu požádat o pořad nebo film?"
     },
     "q3": {
       "body": "Naše výsledky vyhledávání jsou založeny na The Movie Database (TMDB) a zobrazují se bez ohledu na to, zda naše zdroje skutečně obsah mají.",
       "title": "Ve výsledcích vyhledávání se zobrazuje pořad nebo film, proč jej nemůžu přehrát?"
     },
-    "title": "O kami-movieu"
+    "title": "O movie-webu"
   },
   "actions": {
     "copied": "Zkopírováno",
@@ -82,7 +82,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Zřeknutí odpovědnosti",
-      "disclaimerText": "kami-movie nehostuje žádné soubory, pouze odkazuje na služby třetích stran. Právní záležitosti by měly být řešeny s hostiteli souborů a poskytovateli. kami-movie nenese odpovědnost za žádné mediální soubory zobrazené poskytovateli videa."
+      "disclaimerText": "movie-web nehostuje žádné soubory, pouze odkazuje na služby třetích stran. Právní záležitosti by měly být řešeny s hostiteli souborů a poskytovateli. movie-web nenese odpovědnost za žádné mediální soubory zobrazené poskytovateli videa."
     },
     "links": {
       "discord": "Discord",
@@ -92,13 +92,13 @@
     "tagline": "Sledujte své oblíbené pořady a filmy s touto aplikací pro streamování s otevřeným zdrojovým kódem."
   },
   "global": {
-    "name": "kami-movie",
+    "name": "movie-web",
     "pages": {
       "about": "O nás",
       "dmca": "DMCA",
       "login": "Přihlásit se",
       "onboarding": "Nastavení",
-      "pagetitle": "{{title}} - kami-movie",
+      "pagetitle": "{{title}} - movie-web",
       "register": "Zaregistrovat se",
       "settings": "Nastavení"
     }
@@ -122,7 +122,7 @@
         "default": "Co si přejete sledovat?",
         "extra": [
           "Co chcete objevit?",
-          null,
+          "Co je na vašem seznamu sledovaných filmů?",
           "Jaký je váš oblíbený film?",
           "Jaký je tvůj oblíbený seriál?"
         ]
@@ -132,15 +132,21 @@
     "titles": {
       "day": {
         "default": "Na co byste se chtěli dnes odpoledne dívat?",
-        "extra": ["Chceš zažít dobrodružství? Jurský Park je pro tebe."]
+        "extra": [
+          "Chceš zažít dobrodružství? Jurský Park je pro tebe."
+        ]
       },
       "morning": {
         "default": "Na co byste se chtěli dnes ráno dívat?",
-        "extra": ["Slyšel jsem, že Před úsvitem je super."]
+        "extra": [
+          "Slyšel jsem, že Před úsvitem je super"
+        ]
       },
       "night": {
         "default": "Na co byste se chtěli dnes večer dívat?",
-        "extra": ["Unaven? Slyšel jsem, že Vymítač ďábla je super."]
+        "extra": [
+          "Unaven? Slyšel jsem, že Vymítač ďábla je super."
+        ]
       }
     }
   },
@@ -181,9 +187,10 @@
       "back": "Zpět",
       "explainer": "Pomocí rozšíření prohlížeče můžete získat nejlepší streamy, které nabízíme. S pouhou instalací.",
       "explainerIos": "Bohužel rozšíření není podporováno na iOS. Stiskněte <bold>Zpět</bold> pro výběr jiné možnosti.",
-      "extensionHelp": "Pokud jste rozšíření nainstalovali, ale nebylo zjištěno. <bold>Otevřete rozšíření pomocí nabídky rozšíření ve vašem prohlížeči</bold> a postupujte podle pokynů na obrazovce.",
+      "extensionHelp": "Pokud jste rozšíření nainstalovali, ale nebylo zjištěno, <bold>otevřete rozšíření pomocí nabídky rozšíření ve vašem prohlížeči</bold> a postupujte podle pokynů na obrazovce.",
       "linkChrome": "Instalovat rozšíření pro Chrome",
       "linkFirefox": "Instalovat rozšíření pro Firefox",
+      "notDetecting": "Nainstalováno na Chromu, ale stránka to nezaznamenala? Skuste přenačíst stránku!",
       "notDetectingAction": "Obnovit stránku",
       "status": {
         "disallowed": "Rozšíření není pro tuto stránku povoleno",
@@ -229,7 +236,7 @@
           "title": "Vlastní proxy"
         }
       },
-      "title": "Pojďme vám nastavit kami-movie"
+      "title": "Pojďme vám nastavit movie-web"
     }
   },
   "overlays": {
@@ -245,10 +252,11 @@
     },
     "menus": {
       "downloads": {
-        "disclaimer": "Stahování probíhá přímo u poskytovatele. kami-movie nemá kontrolu nad tím, jak jsou stahování poskytovány.",
+        "copyHlsPlaylist": "Zkopírovat link HLS playlistu",
+        "disclaimer": "Stahování probíhá přímo u poskytovatele. movie-web nemá kontrolu nad tím, jak jsou stahování poskytovány.",
         "downloadSubtitle": "Stáhnout aktuální titulky",
         "downloadVideo": "Stáhnout video",
-        "hlsDisclaimer": "Stahování probíhá přímo u poskytovatele. kami-movie nemá kontrolu nad tím, jak jsou stahování poskytovány.<br /><br />Vezměte prosím na vědomí, že stahujete HLS playlist,<bold> který není doporučen stahovat pokud nejste obeznámeni s pokročilým streamováním médií</bold>. Raději skuste jiný zdroj pro jiný formát.",
+        "hlsDisclaimer": "Stahování probíhá přímo u poskytovatele. movie-web nemá kontrolu nad tím, jak jsou stahování poskytovány.<br /><br />Vezměte prosím na vědomí, že stahujete HLS playlist,<bold> který není doporučen stahovat pokud nejste obeznámeni s pokročilým streamováním médií</bold>. Raději skuste jiný zdroj pro jiný formát.",
         "onAndroid": {
           "1": "Na Androidu klikněte na tlačítko stahování, poté na nové stránce <bold>klepněte a podržte</bold> na videu a poté vyberte <bold>uložit</bold>.",
           "shortTitle": "Stahování / Android",
@@ -391,7 +399,7 @@
       "shortRemaining": "-{{timeLeft}}"
     },
     "turnstile": {
-      "description": "Ověřte, prosím, že jste člověk, vyplněním Captchy napravo. Toto je pro zajištění bezpečnosti kami-movie!",
+      "description": "Ověřte, prosím, že jste člověk, vyplněním Captchy napravo. Toto je pro zajištění bezpečnosti movie-web!",
       "error": "Nepodařilo se ověřit vaši lidskost. Zkuste to prosím znovu.",
       "title": "Potřebujeme ověřit, zda jste člověk.",
       "verifyingHumanity": "Ověřování vaši lidskosti..."
@@ -399,7 +407,7 @@
   },
   "screens": {
     "dmca": {
-      "text": "Vítejte na DMCA kontaktní stránce kami-movieu! Respektujeme práva duševního vlastnictví a chceme rychle řešit jakékoli problémy s autorským právem. Pokud se domníváte, že vaše dílo chráněné autorskými právy bylo na naší platformě neoprávněně použito, zašlete prosím podrobné oznámení DMCA na níže uvedený e-mail. Uveďte prosím popis materiálu chráněného autorským právem, své kontaktní údaje a prohlášení o dobré víře. Jsme odhodláni tyto záležitosti rychle vyřešit a oceňujeme vaši spolupráci při udržování kami-movieu jako místa, které respektuje kreativitu a autorská práva.",
+      "text": "Vítejte na DMCA kontaktní stránce movie-webu! Respektujeme práva duševního vlastnictví a chceme rychle řešit jakékoli problémy s autorským právem. Pokud se domníváte, že vaše dílo chráněné autorskými právy bylo na naší platformě neoprávněně použito, zašlete prosím podrobné oznámení DMCA na níže uvedený e-mail. Uveďte prosím popis materiálu chráněného autorským právem, své kontaktní údaje a prohlášení o dobré víře. Jsme odhodláni tyto záležitosti rychle vyřešit a oceňujeme vaši spolupráci při udržování movie-webu jako místa, které respektuje kreativitu a autorská práva.",
       "title": "DMCA"
     },
     "loadingApp": "Načítání aplikace",
@@ -528,6 +536,7 @@
       }
     },
     "subtitles": {
+      "backgroundBlurLabel": "Rozostření pozadí",
       "backgroundLabel": "Neprůhlednost pozadí",
       "colorLabel": "Barva",
       "previewQuote": "Nesmím se bát. Strach zabíjí myšlení.",

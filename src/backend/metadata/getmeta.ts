@@ -43,7 +43,7 @@ export function formatTMDBMetaResult(
       title: movie.title,
       object_type: mediaTypeToTMDB(type),
       poster: getMediaPoster(movie.poster_path) ?? undefined,
-      original_release_year: new Date(movie.release_date).getFullYear(),
+      original_release_date: new Date(movie.release_date),
     };
   }
   if (type === MWMediaType.SERIES) {
@@ -58,7 +58,7 @@ export function formatTMDBMetaResult(
         title: v.name,
       })),
       poster: getMediaPoster(show.poster_path) ?? undefined,
-      original_release_year: new Date(show.first_air_date).getFullYear(),
+      original_release_date: new Date(show.first_air_date),
     };
   }
 
@@ -135,15 +135,13 @@ export async function getLegacyMetaFromId(
     throw err;
   }
 
-  let imdbId = data.external_ids.find(
-    (v) => v.provider === "imdb_latest",
-  )?.external_id;
+  let imdbId = data.external_ids.find((v) => v.provider === "imdb_latest")
+    ?.external_id;
   if (!imdbId)
     imdbId = data.external_ids.find((v) => v.provider === "imdb")?.external_id;
 
-  let tmdbId = data.external_ids.find(
-    (v) => v.provider === "tmdb_latest",
-  )?.external_id;
+  let tmdbId = data.external_ids.find((v) => v.provider === "tmdb_latest")
+    ?.external_id;
   if (!tmdbId)
     tmdbId = data.external_ids.find((v) => v.provider === "tmdb")?.external_id;
 

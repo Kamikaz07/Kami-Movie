@@ -1,10 +1,9 @@
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 import "@/setup/pwa";
 import "core-js/stable";
 import "./stores/__old/imports";
 import "@/setup/ga";
 import "@/assets/css/index.css";
+
 import { StrictMode, Suspense, useCallback } from "react";
 import type { ReactNode } from "react";
 import { createRoot } from "react-dom/client";
@@ -155,8 +154,6 @@ root.render(
             <BookmarkSyncer />
             <SettingsSyncer />
             <TheRouter>
-              <Analytics />
-              <SpeedInsights />
               <MigrationRunner />
             </TheRouter>
           </ThemeProvider>

@@ -1,20 +1,20 @@
 {
   "about": {
-    "description": "kami-movie is een webapplicatie die het internet afzoekt naar streams. Het team streeft naar een minimalistische benadering van het consumeren van inhoud.",
+    "description": "movie-web is een webapplicatie die het internet afzoekt naar streams. Het team streeft naar een minimalistische benadering van het consumeren van inhoud.",
     "faqTitle": "Veelgestelde vragen",
     "q1": {
-      "body": "kami-movie host geen inhoud. Wanneer je op iets klikt om te bekijken, wordt het internet afgezocht naar de geselecteerde media (op het laadscherm en in het tabblad 'videobronnen' kun je zien welke bron je gebruikt). Media wordt nooit geüpload door kami-movie, alles gaat via dit zoekmechanisme.",
+      "body": "movie-web host geen inhoud. Wanneer je op iets klikt om te bekijken, wordt het internet afgezocht naar de geselecteerde media (op het laadscherm en in het tabblad 'videobronnen' kun je zien welke bron je gebruikt). Media wordt nooit geüpload door movie-web, alles gaat via dit zoekmechanisme.",
       "title": "Waar komt de content vandaan?"
     },
     "q2": {
-      "body": "Het is niet mogelijk om een show of film aan te vragen, kami-movie beheert geen content. Alle inhoud wordt bekeken via bronnen op het internet.",
+      "body": "Het is niet mogelijk om een show of film aan te vragen, movie-web beheert geen content. Alle inhoud wordt bekeken via bronnen op het internet.",
       "title": "Waar kan ik een show of film aanvragen?"
     },
     "q3": {
       "body": "Onze zoekresultaten worden aangestuurd door The Movie Database (TMDB) en worden weergegeven ongeacht of onze bronnen de inhoud daadwerkelijk hebben.",
       "title": "De zoekresultaten tonen de show of film, waarom kan ik hem niet afspelen?"
     },
-    "title": "Over kami-movie"
+    "title": "Over movie-web"
   },
   "actions": {
     "copied": "Gekopieerd",
@@ -82,7 +82,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Disclaimer",
-      "disclaimerText": "kami-movie host geen bestanden, maar linkt alleen naar diensten van derden. Juridische kwesties moeten worden opgenomen met de bestandshosts en providers. kami-movie is niet verantwoordelijk voor mediabestanden die worden getoond door de videoproviders."
+      "disclaimerText": "movie-web host geen bestanden, maar linkt alleen naar diensten van derden. Juridische kwesties moeten worden opgenomen met de bestandshosts en providers. movie-web is niet verantwoordelijk voor mediabestanden die worden getoond door de videoproviders."
     },
     "links": {
       "discord": "Discord",
@@ -92,13 +92,13 @@
     "tagline": "Bekijk je favoriete shows en films met deze open source streaming app."
   },
   "global": {
-    "name": "kami-movie",
+    "name": "movie-web",
     "pages": {
       "about": "Over",
       "dmca": "DMCA",
       "login": "Login",
       "onboarding": "Instellen",
-      "pagetitle": "{{title}} - kami-movie",
+      "pagetitle": "{{title}} - movie-web",
       "register": "Registreren",
       "settings": "Instellingen"
     }
@@ -138,11 +138,15 @@
       },
       "morning": {
         "default": "Waar wil je deze ochtend naar kijken?",
-        "extra": ["Ik hoor dat Before Sunrise goed is"]
+        "extra": [
+          "Ik hoor dat Before Sunrise goed is"
+        ]
       },
       "night": {
         "default": "Wat wil je vanavond bekijken?",
-        "extra": ["Moe? Ik hoor dat The Exorcist goed is."]
+        "extra": [
+          "Moe? Ik hoor dat The Exorcist goed is."
+        ]
       }
     }
   },
@@ -232,7 +236,7 @@
           "title": "Eigen proxy"
         }
       },
-      "title": "Laten we beginnen met het instellen van kami-movie"
+      "title": "Laten we beginnen met het instellen van movie-web"
     }
   },
   "overlays": {
@@ -249,10 +253,10 @@
     "menus": {
       "downloads": {
         "copyHlsPlaylist": "HLS-afspeellijstlink kopiëren",
-        "disclaimer": "Downloads worden direct bij de bron opgehaald. kami-movie heeft geen controle over het bestand dat je ontvangt.",
+        "disclaimer": "Downloads worden direct bij de bron opgehaald. movie-web heeft geen controle over het bestand dat je ontvangt.",
         "downloadSubtitle": "Download huidige ondertiteling",
         "downloadVideo": "Download filmpje",
-        "hlsDisclaimer": "Downloads worden rechtstreeks van de aanbieder gehaald. kami-movie heeft geen controle over de manier waarop de downloads worden aangeboden.<br /><br />Houd er rekening mee dat u nu een HLS-afspeellijst downloadt, het wordt <bold>afgeraden deze te downloaden als u niet bekend bent met geavanceerde streamingbestandstypen</bold>. Probeer verschillende bronnen voor verschillende streamingbestandstypen.",
+        "hlsDisclaimer": "Downloads worden rechtstreeks van de aanbieder gehaald. movie-web heeft geen controle over de manier waarop de downloads worden aangeboden.<br /><br />Houd er rekening mee dat u nu een HLS-afspeellijst downloadt, het wordt <bold>afgeraden deze te downloaden als u niet bekend bent met geavanceerde streamingbestandstypen</bold>. Probeer verschillende bronnen voor verschillende streamingbestandstypen.",
         "onAndroid": {
           "1": "Om te downloaden op Android, klik je op de downloadknop en vervolgens, op de nieuwe pagina, <bold>tap and hold</bold> op de video en selecteer <bold>save</bold>.",
           "shortTitle": "Download / Android",
@@ -290,6 +294,7 @@
         "title": "Kwaliteit"
       },
       "settings": {
+        "audioItem": "Audio",
         "downloadItem": "Download",
         "enableSubtitles": "Ondertitels inschakelen",
         "experienceSection": "Kijk-ervaring",
@@ -316,8 +321,9 @@
         "unknownOption": "Onbekend"
       },
       "subtitles": {
-        "customChoice": "Selecteer ondertiteling uit bestand",
+        "customChoice": "Sleep of upload bestand",
         "customizeLabel": "Aanpassen",
+        "dropSubtitleFile": "Sleep ondertitelbestand naar hier",
         "offChoice": "Uit",
         "settings": {
           "backlink": "Aangepaste ondertiteling",
@@ -375,6 +381,13 @@
       "title": "Oeps, hier ging iets mis!"
     },
     "scraping": {
+      "extensionFailure": {
+        "badge": "Extensie uitgeschakeld",
+        "enableExtension": "Extensie inschakelen",
+        "homeButton": "Naar hoofdpagina",
+        "text": "Je hebt de movie-web extensie geïnstalleerd. Om deze te gebruiken, moet je de extensie inschakelen voor deze site.",
+        "title": "Activeer alstublieft de extensie"
+      },
       "items": {
         "failure": "Daar ging iets mis",
         "notFound": "Er is geen video gevonden",
@@ -395,7 +408,7 @@
       "shortRemaining": "-{{timeLeft}}"
     },
     "turnstile": {
-      "description": "Bevestig dat u een mens bent door de Captcha aan de rechterkant in te vullen. Dit is om kami-movie veilig te houden!",
+      "description": "Bevestig dat u een mens bent door de Captcha aan de rechterkant in te vullen. Dit is om movie-web veilig te houden!",
       "error": "Kan uw menselijkheid niet verifiëren. Probeer het opnieuw.",
       "title": "We moeten verifiëren dat u een mens bent.",
       "verifyingHumanity": "Je menselijkheid verifiëren..."
@@ -403,7 +416,7 @@
   },
   "screens": {
     "dmca": {
-      "text": "Welkom op de DMCA-contactpagina van kami-movie! Wij respecteren intellectuele eigendomsrechten en willen eventuele problemen met auteursrechten snel aanpakken. Als u van mening bent dat uw auteursrechtelijk beschermde werk onjuist is gebruikt op ons platform, stuur dan een gedetailleerde DMCA-kennisgeving naar het onderstaande e-mailadres. Vermeld een beschrijving van het auteursrechtelijk beschermde materiaal, uw contactgegevens en een verklaring dat u te goeder trouw bent. Wij zetten ons in om deze zaken snel op te lossen en waarderen uw medewerking om kami-movie een plek te houden waar creativiteit en auteursrechten worden gerespecteerd.",
+      "text": "Welkom op de DMCA-contactpagina van movie-web! Wij respecteren intellectuele eigendomsrechten en willen eventuele problemen met auteursrechten snel aanpakken. Als u van mening bent dat uw auteursrechtelijk beschermde werk onjuist is gebruikt op ons platform, stuur dan een gedetailleerde DMCA-kennisgeving naar het onderstaande e-mailadres. Vermeld een beschrijving van het auteursrechtelijk beschermde materiaal, uw contactgegevens en een verklaring dat u te goeder trouw bent. Wij zetten ons in om deze zaken snel op te lossen en waarderen uw medewerking om movie-web een plek te houden waar creativiteit en auteursrechten worden gerespecteerd.",
       "title": "DMCA"
     },
     "loadingApp": "Toepassing laden",

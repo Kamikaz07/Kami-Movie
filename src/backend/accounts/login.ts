@@ -40,7 +40,7 @@ export async function loginAccount(
   return ofetch<LoginResponse>("/auth/login/complete", {
     method: "POST",
     body: {
-      namespace: "kami-movie",
+      namespace: "movie-web",
       ...data,
     },
     baseURL: url,

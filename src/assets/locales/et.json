@@ -1,20 +1,20 @@
 {
   "about": {
-    "description": "kami-movie on veebirakendus, mis otsib internetti striimide jaoks. Meie eesmärk on enamasti minimalistlik lähenemine sisu tarbimisele.",
+    "description": "movie-web on veebirakendus, mis otsib internetti striimide jaoks. Meie eesmärk on enamasti minimalistlik lähenemine sisu tarbimisele.",
     "faqTitle": "Tihti küsitud küsimused",
     "q1": {
-      "body": "kami-movie ei hoiusta enda sisu. Kui klõpsate, et midagi vaadata, otsitakse valitud meediat internetist (laadimisekraanil ja vahekaardil \"videoallikad\" näete, millist allikat te kasutate). Meediat ei lae kami-movie kunagi üles, kõik toimub selle otsingumehhanismi kaudu.",
+      "body": "movie-web ei hoiusta enda sisu. Kui klõpsate, et midagi vaadata, otsitakse valitud meediat internetist (laadimisekraanil ja vahekaardil \"videoallikad\" näete, millist allikat te kasutate). Meediat ei lae movie-web kunagi üles, kõik toimub selle otsingumehhanismi kaudu.",
       "title": "Kust tuleb meie sisu?"
     },
     "q2": {
-      "body": "Saadet või filmi ei ole võimalik taotelda, kami-movie ei halda mingit sisu. Kogu sisu vaadatakse interneti allikate kaudu.",
+      "body": "Saadet või filmi ei ole võimalik taotelda, movie-web ei halda mingit sisu. Kogu sisu vaadatakse interneti allikate kaudu.",
       "title": "Kust ma saan kindlat saadet või filmi paluda?"
     },
     "q3": {
       "body": "Meie otsingutulemusi toetab The Movie Database (TMDB) ja need kuvatakse sõltumata sellest, kas meie allikates on sisu tegelikult olemas.",
       "title": "Otsingutulemustes kuvatakse saade või film. Miks ma ei saa seda esitada?"
     },
-    "title": "kami-movie'i kohta"
+    "title": "movie-web'i kohta"
   },
   "actions": {
     "copied": "Kopeeritud",
@@ -82,7 +82,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Lahtiütlemine",
-      "disclaimerText": "kami-movie ei hoiusta ühtegi faili, vaid ainult lingib kolmandate osapoolte teenustele. Juriidilised küsimused tuleks lahendada failihostide ja teenusepakkujatega. kami-movie ei vastuta videopakkujate poolt näidatud meediafailide eest."
+      "disclaimerText": "movie-web ei hoiusta ühtegi faili, vaid ainult lingib kolmandate osapoolte teenustele. Juriidilised küsimused tuleks lahendada failihostide ja teenusepakkujatega. movie-web ei vastuta videopakkujate poolt näidatud meediafailide eest."
     },
     "links": {
       "discord": "Discord",
@@ -92,13 +92,13 @@
     "tagline": "Vaadake selle avatud lähtekoodiga striimimis rakendusega oma lemmiksaateid ja -filme."
   },
   "global": {
-    "name": "kami-movie",
+    "name": "movie-web",
     "pages": {
       "about": "Meist",
       "dmca": "DMCA",
       "login": "Logi sisse",
       "onboarding": "Seadistamine",
-      "pagetitle": "{{title}} - kami-movie",
+      "pagetitle": "{{title}} - movie-web",
       "register": "Registreeri",
       "settings": "Sätted"
     }
@@ -138,11 +138,15 @@
       },
       "morning": {
         "default": "Mida te soovite täna hommikul vaadata?",
-        "extra": ["Ma kuulsin, et Before Sunrise on hea"]
+        "extra": [
+          "Ma kuulsin, et Before Sunrise on hea"
+        ]
       },
       "night": {
         "default": "Mida te soovite täna õhtul vaadata?",
-        "extra": ["Väsinud? Olen kuulnud, et The Exorcist on hea."]
+        "extra": [
+          "Väsinud? Olen kuulnud, et The Exorcist on hea."
+        ]
       }
     }
   },
@@ -151,7 +155,8 @@
     "types": {
       "movie": "Film",
       "show": "Saade"
-    }
+    },
+    "unreleased": "Avaldamata"
   },
   "navigation": {
     "banner": {
@@ -232,7 +237,7 @@
           "title": "Kohandatud proxy"
         }
       },
-      "title": "Teeme algust kami-moviei kasutamisega"
+      "title": "Teeme algust movie-webi kasutamisega"
     }
   },
   "overlays": {
@@ -249,10 +254,10 @@
     "menus": {
       "downloads": {
         "copyHlsPlaylist": "Kopeeri HLS esitusloendi link",
-        "disclaimer": "Allalaadimine toimub otse teenusepakkujalt. kami-movie ei saa kontrollida, kuidas allalaadimine toimub.",
+        "disclaimer": "Allalaadimine toimub otse teenusepakkujalt. movie-web ei saa kontrollida, kuidas allalaadimine toimub.",
         "downloadSubtitle": "Laadige alla praegune subtiiter",
         "downloadVideo": "Lae alla video",
-        "hlsDisclaimer": "Allalaadimised võetakse otse teenusepakkujalt. kami-movie ei kontrolli, kuidas allalaadimisi pakutakse. <br /><br /><bold>Pange tähele, et laadite alla HLS-i esitusloendit, see on mõeldud kasutajatele, kes on tuttavad multimeediumi striimimisega</bold>.",
+        "hlsDisclaimer": "Allalaadimised võetakse otse teenusepakkujalt. movie-web ei kontrolli, kuidas allalaadimisi pakutakse. <br /><br /><bold>Pange tähele, et laadite alla HLS-i esitusloendit, see on mõeldud kasutajatele, kes on tuttavad multimeediumi striimimisega</bold>.",
         "onAndroid": {
           "1": "Et allalaadida Androidi telefonil, vajuta allalaadimise nupule, siis uuel leheküljel <bold>vajuta ja hoia</bold> video peal, siis vali <bold>salvesta</bold>.",
           "shortTitle": "Allalaadimine / Android",
@@ -290,6 +295,7 @@
         "title": "Kvaliteet"
       },
       "settings": {
+        "audioItem": "Audio",
         "downloadItem": "Lae alla",
         "enableSubtitles": "Luba Subtiitrid",
         "experienceSection": "Vaatamise kogemus",
@@ -316,8 +322,9 @@
         "unknownOption": "Teadmata"
       },
       "subtitles": {
-        "customChoice": "Vali subtiitrid failist",
+        "customChoice": "Kukuta või vali subtiitri fail",
         "customizeLabel": "Kohanda",
+        "dropSubtitleFile": "Kukuta subtiitri fail siia",
         "offChoice": "Välja",
         "settings": {
           "backlink": "Kohandatud subtiitrid",
@@ -375,6 +382,13 @@
       "title": "Video mängimine ebaōnnestus!"
     },
     "scraping": {
+      "extensionFailure": {
+        "badge": "Brauserilaiendus väljalülitatud",
+        "enableExtension": "Lülita brauserilaiendus sisse",
+        "homeButton": "Tagasi",
+        "text": "Olete allalaadinud movie-web'i brauserilaiendue. Selle kasutamiseks peate vajutama brauserilaienduse peale ning andma ligipääsu praegusele saidile.",
+        "title": "Palun lülita brauserilaiendus sisse"
+      },
       "items": {
         "failure": "Tekkis viga",
         "notFound": "Ei ole videot",
@@ -395,7 +409,7 @@
       "shortRemaining": "-{{timeLeft}}"
     },
     "turnstile": {
-      "description": "Palun kinnitage, et olete inimene, täites paremal asuva Captcha. See on selleks, et hoida kami-movie turvalisena!",
+      "description": "Palun kinnitage, et olete inimene, täites paremal asuva Captcha. See on selleks, et hoida movie-web turvalisena!",
       "error": "Ei õnnestunud kontrollida teie inimlikkust. Palun proovige uuesti.",
       "title": "Me peame kontrollima, et te olete inimene.",
       "verifyingHumanity": "Kontrollime kas olete robot..."
@@ -403,7 +417,7 @@
   },
   "screens": {
     "dmca": {
-      "text": "Tere tulemast kami-moviei DMCA kontaktilehele! Me austame intellektuaalomandi õigusi ja soovime kiiresti lahendada kõik autoriõigusega seotud probleemid. Kui usute, et teie autoriõigusega kaitstud tööd on meie platvormil vääralt kasutatud, saatke palun üksikasjalik DMCA-teade alljärgnevale e-posti aadressile. Palun lisage autoriõigusega kaitstud materjali kirjeldus, oma kontaktandmed ja avaldus heauskse veendumuse kohta. Oleme pühendunud nende küsimuste kiirele lahendamisele ja hindame teie koostööd, et kami-movie oleks koht, kus austatakse loovust ja autoriõigusi.",
+      "text": "Tere tulemast movie-webi DMCA kontaktilehele! Me austame intellektuaalomandi õigusi ja soovime kiiresti lahendada kõik autoriõigusega seotud probleemid. Kui usute, et teie autoriõigusega kaitstud tööd on meie platvormil vääralt kasutatud, saatke palun üksikasjalik DMCA-teade alljärgnevale e-posti aadressile. Palun lisage autoriõigusega kaitstud materjali kirjeldus, oma kontaktandmed ja avaldus heauskse veendumuse kohta. Oleme pühendunud nende küsimuste kiirele lahendamisele ja hindame teie koostööd, et movie-web oleks koht, kus austatakse loovust ja autoriõigusi.",
       "title": "DMCA"
     },
     "loadingApp": "Rakenduse laadimine",
