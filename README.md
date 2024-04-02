@@ -1,14 +1,6 @@
-
-<p align="center"><img align="center" width="280" src="./.github/logo-dark.svg#gh-dark-mode-only"/></p>
-<p align="center"><img align="center" width="280" src="./.github/logo-light.svg#gh-light-mode-only"/></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,vite,ts" />
-  <br/>
-  <a href="https://movie-web.github.io/links/discord"><kbd>🔵 discord</kbd></a> <a href="https://movie-web.github.io/docs"><kbd>🟢 docs</kbd></a>
-</p>
 <br/><br/>
 
-# ⚡What is movie-web?
+# ⚡What is kami-movie?
 
 movie-web is a web app for watching movies easily.
 
@@ -53,15 +45,4 @@ pnpm build
 > [!TIP]
 > You must use pnpm (`npm i -g pnpm`) and run NodeJS 20
 
-# 🥔 Selfhosting
-
-A simple guide has been written to assist in hosting your own instance of movie-web. Check it out below
-
-|[Selfhosting guide](https://movie-web.github.io/docs)|
-|---|
-
-## 🤝 Thanks to all Contributors
-This project would not be possible without our amazing contributors and the community. Thanks a lot! Keep rocking 🍻.
-
-[![Contributors](https://contrib.rocks/image?repo=movie-web/movie-web)](https://github.com/movie-web/movie-web/graphs/contributors)
 
