@@ -104,13 +104,13 @@ export default defineConfig(({ mode }) => {
               src: "logo.png",
               sizes: "512x512",
               type: "image/png",
-              platform: "wide"
+              platform: "wide",
             },
             {
-              src: "logo.png",
-              sizes: "512x512",
-              type: "image/png"
-              // "platform": "narrow" é opcional e geralmente não é necessário a menos que você queira especificar
+              src: "logo_192.png",
+              sizes: "192x192",
+              type: "image/png",
+              platform: "narrow",
             }
           ],
         },
