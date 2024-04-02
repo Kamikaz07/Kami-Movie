@@ -64,7 +64,6 @@ export default defineConfig(({ mode }) => {
         includeAssets: [
           "favicon.ico",
           "logo.png",
-          "logo.png",
         ],
         manifest: {
           name: "kami-movie",
@@ -76,7 +75,7 @@ export default defineConfig(({ mode }) => {
           start_url: "/",
           icons: [
             {
-              src: "logo.png",
+              src: "logo_192.png",
               sizes: "192x192",
               type: "image/png",
               purpose: "any",
@@ -88,7 +87,7 @@ export default defineConfig(({ mode }) => {
               purpose: "any",
             },
             {
-              src: "logo.png",
+              src: "logo_192.png",
               sizes: "192x192",
               type: "image/png",
               purpose: "maskable",
