@@ -99,6 +99,20 @@ export default defineConfig(({ mode }) => {
               purpose: "maskable",
             },
           ],
+          screenshots: [
+            {
+              src: "logo.png",
+              sizes: "512x512",
+              type: "image/png",
+              platform: "wide"
+            },
+            {
+              src: "logo.png",
+              sizes: "512x512",
+              type: "image/png"
+              // "platform": "narrow" é opcional e geralmente não é necessário a menos que você queira especificar
+            }
+          ],
         },
       }),
       loadVersion(),
