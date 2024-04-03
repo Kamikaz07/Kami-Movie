@@ -66,6 +66,7 @@ export default defineConfig(({ mode }) => {
           "logo.png",
         ],
         manifest: {
+          id: "/",
           name: "kami-movie",
           short_name: "kami-movie",
           description: "The place for your favourite movies & shows",
@@ -107,8 +108,8 @@ export default defineConfig(({ mode }) => {
               platform: "wide",
             },
             {
-              src: "logo_1280.png", // Caminho para a sua captura de tela
-              sizes: "1280x720", // As dimensões reais da sua captura de tela
+              src: "logo_1280.png",
+              sizes: "1280x720", 
               type: "image/png",
               platform: "wide"
             },
