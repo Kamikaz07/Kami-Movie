@@ -106,6 +106,12 @@ export default defineConfig(({ mode }) => {
               type: "image/png",
               platform: "wide",
             },
+            {
+              src: "logo_1280.png", // Caminho para a sua captura de tela
+              sizes: "1280x720", // As dimensões reais da sua captura de tela
+              type: "image/png",
+              platform: "wide"
+            },
           ],
         },
       }),
